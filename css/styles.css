@@ -1,47 +1,35 @@
-:root{
-    --hero-bg-color: #4eaf6bcc;
-    --hero-color-text:#ffffff;
-    --hero-heading-font-size: 25px;
-}
-
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #77c248;
-}
-
-.hero{
-    justify-content: center;
     display: flex;
-    background-color:var(--hero-bg-color);
-    text-align: center;
     align-items: center;
-    padding: 55px;
+    justify-content: center;
     height: 100vh;
+    background-color:bisque ;
 }
 
-.hero h1{
-    font-size: var(--hero-heading-font-size);
-    margin: 0 10px 30px;
-    color: var(--hero-color-text);
-
+.flex-container{
+    display: flex;
+    background-color: brown;
+    border: 2px solid black;
+    padding:10px;
+    width: 80%;
+}
+.flex-item{
+    background-color: #da7d04;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 25px;
 }
 
-.hero p{
-    font-size: var(--hero-heading-font-size);
-    margin: 10px 10px 10px;
-    color: var(--hero-color-text);
+.item1{
+    flex-grow: 1;
 }
 
-.hero-button{
-    text-decoration: none;
-    background-color:#ffffff;
-    padding: 5px;
-    color: #1e4ea7;
-    border-radius: 6px;
-    transition: background-color 1s, color 1s;
+.item2{
+    flex-grow: 1;
 }
 
-.hero-button:hover{
-    background-color: #1e4e67;
-    color: #ffffff;
+.item3{
+    flex-basis: 1;
 }
