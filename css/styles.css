@@ -1,0 +1,47 @@
+:root{
+    --hero-bg-color: #4eaf6bcc;
+    --hero-color-text:#ffffff;
+    --hero-heading-font-size: 25px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #77c248;
+}
+
+.hero{
+    justify-content: center;
+    display: flex;
+    background-color:var(--hero-bg-color);
+    text-align: center;
+    align-items: center;
+    padding: 55px;
+    height: 100vh;
+}
+
+.hero h1{
+    font-size: var(--hero-heading-font-size);
+    margin: 0 10px 30px;
+    color: var(--hero-color-text);
+
+}
+
+.hero p{
+    font-size: var(--hero-heading-font-size);
+    margin: 10px 10px 10px;
+    color: var(--hero-color-text);
+}
+
+.hero-button{
+    text-decoration: none;
+    background-color:#ffffff;
+    padding: 5px;
+    color: #1e4ea7;
+    border-radius: 6px;
+    transition: background-color 1s, color 1s;
+}
+
+.hero-button:hover{
+    background-color: #1e4e67;
+    color: #ffffff;
+}
