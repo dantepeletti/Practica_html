@@ -1,17 +1,30 @@
-.gallery{
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    background-color: rgb(19, 25, 43);
+}
+
+.navbar{
     display: flex;
-    justify-content: center;
-    width: 90%;
-    flex-wrap: wrap;
-    background-color: cadetblue;
+    justify-content: space-around;
+    background-color: brown;
+    padding: 10px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
 }
 
-.gallery-item{
-    flex-grow: 1;
-    margin: 10px;
+.list{
+    color: white;
+    font-size: 20px;
 }
 
-.gallery-item img{
-    width: 100%;
-    border-radius: 10px;
+.card{
+    width: (100% - 20px);
+    margin: 0 10px;
+}
+
+.card h1, .card p {
+    color: white;
 }
