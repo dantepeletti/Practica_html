@@ -1,5 +1,5 @@
 body{
-    background-color: aquamarine;
+    background-color: lightseagreen;
 }
 header, footer{
     background-color: cadetblue;
@@ -19,6 +19,7 @@ header, footer{
     align-content: center;
     height: 65vh;
     padding: 20px;
+    margin: 10px;
 }
 .hero-data{
     background: rgba(0, 0, 0, 0.5);
