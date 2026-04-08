@@ -1,4 +1,4 @@
-
+/* 
 let nombre = "juan"
 let apellido = "perez"
 let altura = 1.65
@@ -72,4 +72,91 @@ function sumar (a, b){
     console.log(resultado)
 }
 
-sumar(numero, num) //activa la funciones ^^^
+sumar(numero, num) //activa la funciones ^^^ */
+
+// propiedades y metodos de clases
+class Persona {
+    constructor(nombre, apellido, edad){
+        this.nombre = nombre
+        this.apellido = apellido
+        this.edad = edad
+    }
+
+    saludar(){
+        console.log(`Hola, mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} años`);
+    }
+} 
+
+let p1 = new Persona("juan", "perez", 18);
+p1.saludar();
+
+
+// propiedades y metodos estaticos
+class Coche {
+    constructor(marca, modelo, año){
+        this.marca = marca
+        this.modelo = modelo
+        this.encendido = false
+    }
+    arrancar(){
+        this.encendido = true
+        console.log(`El coche ${this.marca} ${this.modelo} ha arrancado.`);
+    }
+    obtenerInfo(){
+        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);
+    }
+}
+
+let miCoche = new Coche("Toyota", "Corolla", 2020);
+miCoche.arrancar();
+miCoche.obtenerInfo();
+
+
+// desestructuracion de objetos
+let persona1 = { nombre: "Ana", edad: 25, ciudad: "Madrid" };
+
+let { nombre: nombrePersona, edad: edadPersona } = persona1;
+
+console.log(nombrePersona); // Ana
+console.log(edadPersona);   // 25
+
+
+// desestructuracion de arrays
+let numeros = [10, 20, 30, 40];
+
+let [a, b, ...restoArray] = numeros;
+
+console.log(a);          // 10
+console.log(b);          // 20
+console.log(restoArray); // [30, 40]
+
+
+// spread operator
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+
+console.log(arr2); // [1, 2, 3, 4, 5]
+
+let obj1 = { nombre: "Ana" };
+let obj2 = { ...obj1, edad: 25 };
+
+console.log(obj2); // { nombre: "Ana", edad: 25 }
+
+
+// operador rest en arrays
+let numeross = [1, 2, 3, 4, 5];
+
+let [g, h, ...restNumeros] = numeross;
+
+console.log(g);           // 1
+console.log(h);           // 2
+console.log(restNumeros); // [3, 4, 5]
+
+
+// operador rest en objetos
+let persona2 = { nombre: "Ana", edad: 25, ciudad: "Madrid" };
+
+let { nombre: nombre2, ...restObjeto } = persona2;
+
+console.log(nombre2);    // Ana
+console.log(restObjeto); // { edad: 25, ciudad: "Madrid" }
